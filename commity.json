@@ -1,0 +1,54 @@
+{
+  "fields": [
+    {
+      "scope": {
+        "label": "选择本次提交的代码类型",
+        "type": "select",
+        "selectOptions": [
+          {
+            "value": "feat",
+            "description": "开发新功能"
+          },
+          {
+            "value": "fix",
+            "description": "修复功能缺陷"
+          },
+          {
+            "value": "docs",
+            "description": "文档变更"
+          },
+          {
+            "value": "refactor",
+            "description": "重构代码或功能"
+          },
+          {
+            "value": "spec",
+            "description": "单元测试"
+          },
+          {
+            "value": "packages",
+            "description": "依赖项变动"
+          }
+        ]
+      }
+    },
+    {
+      "message": {
+        "label": "请输入提交信息",
+        "decorations": {
+          "prefix": ": "
+        }
+      }
+    },
+    {
+      "ticket": {
+        "label": "本次提交是否关联issues?",
+        "decorations": {
+          "prefix": " #"
+        },
+        "required": false
+      }
+    }
+  ],
+  "render": "{{scope}}{{ticket}}{{message}}"
+}
