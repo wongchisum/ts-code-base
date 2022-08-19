@@ -1,6 +1,3 @@
 *.log
 /dist
 /node_modules
-lib/main.d.ts
-lib/main.js
-lib/main.js.map
